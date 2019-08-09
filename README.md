@@ -1,8 +1,8 @@
-# Nodal+ # 
+# Nodal+
 
 ### Desenvolvido por  ###
 
 * Anderson de Alencar
 * Edon Bredon
-* VinÃ­cius Macedo
+* Vinícius Macedo
 * Kemuel Rocha
