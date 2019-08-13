@@ -28,7 +28,7 @@
             <Font name="Candara Light" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="59.0" layoutY="371.0" mnemonicParsing="false" onAction="#ir_O1" style="-fx-background-color: white;">
+      <Button layoutX="59.0" layoutY="371.0" mnemonicParsing="false" style="-fx-background-color: white;">
          <graphic>
             <ImageView fitHeight="258.0" fitWidth="231.0">
                <image>

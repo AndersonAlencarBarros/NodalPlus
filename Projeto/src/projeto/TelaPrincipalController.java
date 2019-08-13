@@ -23,7 +23,7 @@ public class TelaPrincipalController implements Initializable {
     
     @FXML
     public void ir_Ohm(){ 
-         Projeto.loadScene("OHM.fxml", "Calcular");  
+         Projeto.loadScene("OHM.fxml", "Lei de Ohm");  
     }
     
 }

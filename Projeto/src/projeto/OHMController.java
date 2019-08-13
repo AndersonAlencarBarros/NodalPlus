@@ -9,12 +9,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-
-/**
- * FXML Controller class
- *
- * @author UNIVASF
- */
+ 
 public class OHMController implements Initializable {
  
     @Override
@@ -22,6 +17,10 @@ public class OHMController implements Initializable {
         // TODO
     }  
     
+    @FXML
+    public void ir_TelaPrincipal(){ 
+         Projeto.loadScene("TelaPrincipal.fxml", "Calcular");  
+    }
     
     @FXML
     public void ir_O1(){ 
