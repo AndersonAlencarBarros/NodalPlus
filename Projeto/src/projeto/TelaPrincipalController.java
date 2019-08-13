@@ -13,13 +13,17 @@ public class TelaPrincipalController implements Initializable {
         
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        
     }    
     
     @FXML
-    public void ir_TelaTensao(){
-        System.out.println("akivai");
+    public void ir_TelaTensao(){ 
          Projeto.loadScene("TelaTensao.fxml", "Calcular");  
+    }
+    
+    @FXML
+    public void ir_Ohm(){ 
+         Projeto.loadScene("OHM.fxml", "Calcular");  
     }
     
 }
