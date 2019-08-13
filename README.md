@@ -4,10 +4,10 @@
 
 * Anderson de Alencar
 * Edon Bredon
-* Vinícius Macedo
+* VinÃ­cius Macedo
 * Kemuel Rocha
 
 
-# Simulador Circuitos
+## Simulador Circuitos
 
 * [Simulador](http://www.falstad.com/circuit/)
