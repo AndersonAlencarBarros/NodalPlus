@@ -32,4 +32,4 @@ public class OHMController implements Initializable {
          Projeto.loadScene("O2.fxml", "Calcular");  
     }
     
-}// Testando Testando// Testando Testando// Testando Testando// Testando Testando
+} 
