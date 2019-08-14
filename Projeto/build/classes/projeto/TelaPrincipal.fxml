@@ -15,7 +15,7 @@
             <Image url="@../Icones/asdadadsadsad.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="301.0" layoutY="477.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #ff6f60;" text="Lei das Malhas">
+      <Button layoutX="301.0" layoutY="477.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #ff6f60;" text="Lei das Correntes">
          <font>
             <Font size="16.0" />
          </font>

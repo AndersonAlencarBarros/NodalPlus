@@ -27,4 +27,9 @@ public class OHMController implements Initializable {
          Projeto.loadScene("O1.fxml", "Calcular");  
     }
     
-}
+    @FXML
+    public void ir_O2(){ 
+         Projeto.loadScene("O2.fxml", "Calcular");  
+    }
+    
+}// Testando Testando// Testando Testando// Testando Testando// Testando Testando

@@ -16,7 +16,7 @@
             <Font name="Candara Light" size="40.0" />
          </font>
       </Label>
-      <Button layoutX="20.0" layoutY="72.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: white;">
+      <Button layoutX="20.0" layoutY="72.0" mnemonicParsing="false" onAction="#ir_TelaOHM" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: white;">
          <graphic>
             <ImageView>
                <image>
@@ -25,7 +25,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="265.0" layoutY="224.0" text="Divirta-se inserindo valores">
+      <Label layoutX="265.0" layoutY="224.0" text="Divirta-se inserindo valores!">
          <font>
             <Font name="Candara Light" size="24.0" />
          </font>
@@ -35,22 +35,27 @@
             <Image url="@../Icones/O1.PNG" />
          </image>
       </ImageView>
-      <Label layoutX="27.0" layoutY="462.0" text="Vfem">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <TextField layoutX="145.0" layoutY="331.0" prefHeight="25.0" prefWidth="33.0" promptText="R1" style="-fx-background-color: white;" />
-      <TextField layoutX="246.0" layoutY="459.0" prefHeight="25.0" prefWidth="33.0" promptText="R2" style="-fx-background-color: white;" />
-      <TextField layoutX="145.0" layoutY="588.0" prefHeight="25.0" prefWidth="33.0" promptText="R3" style="-fx-background-color: white;" />
-      <Button layoutX="303.0" layoutY="452.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="158.0" style="-fx-background-color: wite; -fx-border-color: black;" text="Calcular" />
-      <ImageView fitHeight="278.0" fitWidth="267.0" layoutX="505.0" layoutY="343.0">
+      <TextField fx:id="R1_O1" alignment="CENTER" layoutX="65.0" layoutY="331.0" prefHeight="25.0" prefWidth="193.0" promptText="R1" style="-fx-background-color: white;" />
+      <TextField fx:id="R2_O1" layoutX="246.0" layoutY="459.0" prefHeight="25.0" prefWidth="76.0" promptText="R2" style="-fx-background-color: white;" />
+      <Button layoutX="342.0" layoutY="661.0" mnemonicParsing="false" onAction="#calcular" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: white; -fx-border-color: black;" text="Calcular" />
+      <ImageView fx:id="circuitoO1" fitHeight="278.0" fitWidth="267.0" layoutX="505.0" layoutY="343.0">
          <image>
             <Image url="@../Icones/Ohm%20simplificado.png" />
          </image>
       </ImageView>
-      <Label layoutX="725.0" layoutY="476.0" text="Req" />
-      <Label layoutX="518.0" layoutY="474.0" text="Vfem" />
-      <Label layoutX="625.0" layoutY="549.0" text="I_total" />
+      <Label fx:id="req" layoutX="725.0" layoutY="476.0" prefHeight="17.0" prefWidth="51.0" text="Req" />
+      <Label fx:id="v" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="477.0" layoutY="474.0" prefHeight="17.0" prefWidth="69.0" text="Vfem" />
+      <Label fx:id="I" alignment="CENTER" layoutX="604.0" layoutY="370.0" prefHeight="17.0" prefWidth="69.0" text="I_total" />
+      <TextField fx:id="V_O1" layoutX="12.0" layoutY="457.0" prefHeight="25.0" prefWidth="51.0" promptText="Vfem" style="-fx-background-color: white;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="R3_O1" alignment="CENTER" layoutX="60.0" layoutY="589.0" prefHeight="25.0" prefWidth="193.0" promptText="R3" style="-fx-background-color: white;" />
+      <ImageView fx:id="seta" fitHeight="200.0" fitWidth="200.0" layoutX="497.0" layoutY="327.0" scaleX="0.2" scaleY="0.2">
+         <image>
+            <Image url="@../Icones/seta.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
