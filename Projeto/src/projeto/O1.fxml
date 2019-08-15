@@ -16,7 +16,7 @@
             <Font name="Candara Light" size="40.0" />
          </font>
       </Label>
-      <Button layoutX="20.0" layoutY="72.0" mnemonicParsing="false" onAction="#ir_TelaOHM" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: white;">
+      <Button layoutX="20.0" layoutY="72.0" mnemonicParsing="false" onAction="#ir_TelaOHM" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: white;">
          <graphic>
             <ImageView>
                <image>
@@ -25,7 +25,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="265.0" layoutY="224.0" text="Divirta-se inserindo valores!">
+      <Label layoutX="265.0" layoutY="224.0" text="Divirta-se inserindo valores">
          <font>
             <Font name="Candara Light" size="24.0" />
          </font>
@@ -43,9 +43,18 @@
             <Image url="@../Icones/Ohm%20simplificado.png" />
          </image>
       </ImageView>
-      <Label fx:id="req" layoutX="725.0" layoutY="476.0" prefHeight="17.0" prefWidth="51.0" text="Req" />
-      <Label fx:id="v" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="477.0" layoutY="474.0" prefHeight="17.0" prefWidth="69.0" text="Vfem" />
-      <Label fx:id="I" alignment="CENTER" layoutX="604.0" layoutY="370.0" prefHeight="17.0" prefWidth="69.0" text="I_total" />
+      <Label fx:id="req" layoutX="725.0" layoutY="476.0" prefHeight="17.0" prefWidth="51.0" text="Req">
+         <font>
+            <Font name="Candara" size="12.0" />
+         </font></Label>
+      <Label fx:id="v" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="477.0" layoutY="474.0" prefHeight="17.0" prefWidth="69.0" text="Vfem">
+         <font>
+            <Font name="Candara" size="12.0" />
+         </font></Label>
+      <Label fx:id="I" alignment="CENTER" layoutX="604.0" layoutY="370.0" prefHeight="17.0" prefWidth="69.0" text="I_total">
+         <font>
+            <Font name="Candara" size="12.0" />
+         </font></Label>
       <TextField fx:id="V_O1" layoutX="12.0" layoutY="457.0" prefHeight="25.0" prefWidth="51.0" promptText="Vfem" style="-fx-background-color: white;">
          <font>
             <Font size="13.0" />

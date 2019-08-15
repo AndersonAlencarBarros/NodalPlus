@@ -37,7 +37,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="384.0" layoutY="504.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="275.0" style="-fx-background-color: white;">
+      <Button layoutX="384.0" layoutY="504.0" mnemonicParsing="false" onAction="#ir_O3" prefHeight="130.0" prefWidth="275.0" style="-fx-background-color: white;">
          <graphic>
             <ImageView fitHeight="178.0" fitWidth="338.0">
                <image>

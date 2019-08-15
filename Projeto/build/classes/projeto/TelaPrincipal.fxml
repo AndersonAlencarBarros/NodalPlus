@@ -15,17 +15,17 @@
             <Image url="@../Icones/asdadadsadsad.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="301.0" layoutY="477.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #ff6f60;" text="Lei das Correntes">
+      <Button layoutX="301.0" layoutY="477.0" mnemonicParsing="false" onAction="#ir_TelaCorrente" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: black;" text="Lei das Correntes" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button layoutX="301.0" layoutY="320.0" mnemonicParsing="false" onAction="#ir_Ohm" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #ff6f60;" text="Lei de Ohm">
+      <Button layoutX="301.0" layoutY="320.0" mnemonicParsing="false" onAction="#ir_Ohm" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: black;" text="Lei de Ohm" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button layoutX="301.0" layoutY="397.0" mnemonicParsing="false" onAction="#ir_TelaTensao" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #ff6f60;" text="Lei das Tensões">
+      <Button layoutX="301.0" layoutY="397.0" mnemonicParsing="false" onAction="#ir_TelaTensao" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: black;" text="Lei das Tensões" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>

@@ -10,7 +10,7 @@
 <AnchorPane id="AnchorPane" prefHeight="802.0" prefWidth="795.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.TelaTensaoController">
    <children>
       <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <Label layoutX="268.0" layoutY="72.0" text="Calcular Tensão">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="268.0" layoutY="72.0" prefHeight="58.0" prefWidth="312.0" text="Lei das Tensões">
          <font>
             <Font name="Candara Light" size="40.0" />
          </font>
@@ -29,5 +29,23 @@
             <Font name="Candara Light" size="24.0" />
          </font>
       </Label>
+      <Button layoutX="394.0" layoutY="514.0" mnemonicParsing="false" onAction="#ir_O3" prefHeight="130.0" prefWidth="275.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="178.0" fitWidth="338.0">
+               <image>
+                  <Image url="@../Icones/O3.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="394.0" layoutY="318.0" mnemonicParsing="false" onAction="#ir_O2" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="178.0" fitWidth="338.0">
+               <image>
+                  <Image url="@../Icones/O2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>

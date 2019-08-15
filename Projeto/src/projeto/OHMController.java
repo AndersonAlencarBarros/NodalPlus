@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package projeto;
 
 import java.net.URL;
@@ -30,6 +26,11 @@ public class OHMController implements Initializable {
     @FXML
     public void ir_O2(){ 
          Projeto.loadScene("O2.fxml", "Calcular");  
+    }
+    
+    @FXML
+    public void ir_O3(){ 
+         Projeto.loadScene("O3.fxml", "Calcular");  
     }
     
 } 
