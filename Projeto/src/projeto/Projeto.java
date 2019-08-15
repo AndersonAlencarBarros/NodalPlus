@@ -1,13 +1,12 @@
- 
+// Projeto destinado à disciplina de Física III
+
 package projeto;
 
 import java.io.IOException;
 import javafx.application.Application;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
  
 public class Projeto extends Application {
