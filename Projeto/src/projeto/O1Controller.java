@@ -48,21 +48,26 @@ public class O1Controller implements Initializable {
     
     @FXML
     private void calcular(){
-       req.setOpacity(1);
-       v.setOpacity(1);
-       I.setOpacity(1);
-       circuitoO1.setOpacity(1);
-       seta.setOpacity(1);
-       
-        double R1 = Double.parseDouble(R1_O1.getText());
-        double R2 = Double.parseDouble(R2_O1.getText());
-        double R3 = Double.parseDouble(R3_O1.getText());
-        double Vf = Double.parseDouble(V_O1.getText());
-        double Req = R1 + R2 + R3;  
-        double Corrente = Vf/Req;
-        I.setText(Double.toString(Corrente));
-        v.setText(Double.toString(Vf));
-        req.setText(Double.toString(Req)); 
+        try{
+            req.setOpacity(1);
+            v.setOpacity(1);
+            I.setOpacity(1);
+            circuitoO1.setOpacity(1);
+            seta.setOpacity(1);
+
+            double R1 = Double.parseDouble(R1_O1.getText());
+            double R2 = Double.parseDouble(R2_O1.getText());
+            double R3 = Double.parseDouble(R3_O1.getText());
+            double Vf = Double.parseDouble(V_O1.getText());
+            double Req = R1 + R2 + R3;  
+            double Corrente = Vf/Req;
+            I.setText(Double.toString(Corrente));
+            v.setText(Double.toString(Vf));
+            req.setText(Double.toString(Req)); 
+        }catch(Exception e){
+            System.out.println("Erro na Hora de Calcular");
+        }
     }
 }
+    
 
