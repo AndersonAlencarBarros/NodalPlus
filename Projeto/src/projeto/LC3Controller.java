@@ -7,6 +7,8 @@ package projeto;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -23,5 +25,13 @@ public class LC3Controller implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+    @FXML
+    private void calcular(ActionEvent event) {
+    }
+    @FXML
+    public void ir_TelaCorrente(){ 
+         Projeto.loadScene("TelaCorrente.fxml", "Calcular");  
+    }
     
 }

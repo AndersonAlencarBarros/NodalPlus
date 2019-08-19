@@ -51,7 +51,7 @@ public class LT3Controller implements Initializable {
     }
    
      @FXML
-    public void ir_TelaCorrente(){ 
-         Projeto.loadScene("TelaCorrente.fxml", "Calcular");  
+    public void ir_TelaTensao(){ 
+         Projeto.loadScene("TelaTensao.fxml", "Calcular");  
     }
 }

@@ -23,7 +23,7 @@
       </Label>
       <Button layoutX="20.0" layoutY="72.0" mnemonicParsing="false" onAction="#ir_TelaTensao" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: white;">
          <graphic>
-            <ImageView onMouseClicked="#ir_TelaTensao">
+            <ImageView>
                <image>
                   <Image url="@../Icones/arrow-left-circle(1).png" />
                </image>

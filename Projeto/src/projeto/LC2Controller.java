@@ -46,7 +46,8 @@ public class LC2Controller implements Initializable {
     @FXML
     private void calcular(ActionEvent event) {
     }
-     @FXML
+    
+    @FXML
     public void ir_TelaCorrente(){ 
          Projeto.loadScene("TelaCorrente.fxml", "Calcular");  
     }
