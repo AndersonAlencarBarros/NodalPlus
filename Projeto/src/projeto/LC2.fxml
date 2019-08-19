@@ -36,11 +36,6 @@
          </font>
       </Label>
       <TextField fx:id="r1" layoutX="333.0" layoutY="413.0" prefHeight="25.0" prefWidth="76.0" promptText="R1" style="-fx-background-color: white;" />
-      <ImageView fitHeight="87.0" fitWidth="94.0" layoutX="213.0" layoutY="371.0">
-         <image>
-            <Image url="@../Icones/seta-redonda.png" />
-         </image>
-      </ImageView>
       <TextField fx:id="r2" alignment="CENTER" layoutX="398.0" layoutY="304.0" prefHeight="25.0" prefWidth="76.0" promptText="R2" style="-fx-background-color: white;" />
       <Button layoutX="343.0" layoutY="597.0" mnemonicParsing="false" onAction="#calcular" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: white; -fx-border-color: black;" text="Calcular" />
       <TextField fx:id="vfem" layoutX="117.0" layoutY="411.0" prefHeight="25.0" prefWidth="51.0" promptText="Vfem" style="-fx-background-color: white;">
@@ -49,7 +44,12 @@
          </font>
       </TextField>
       <TextField fx:id="r3" layoutX="553.0" layoutY="416.0" prefHeight="25.0" prefWidth="76.0" promptText="R3" style="-fx-background-color: white;" />
-      <ImageView fitHeight="87.0" fitWidth="94.0" layoutX="393.0" layoutY="376.0">
+      <ImageView fx:id="s1" fitHeight="200.0" fitWidth="200.0" layoutX="162.0" layoutY="315.0" scaleX="0.4" scaleY="0.4">
+         <image>
+            <Image url="@../Icones/seta-redonda.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="s2" fitHeight="200.0" fitWidth="200.0" layoutX="340.0" layoutY="317.0" scaleX="0.4" scaleY="0.4">
          <image>
             <Image url="@../Icones/seta-redonda.png" />
          </image>

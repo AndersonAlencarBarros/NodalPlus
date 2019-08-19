@@ -45,12 +45,7 @@
       </TextField>
       <TextField fx:id="r3" alignment="CENTER_RIGHT" layoutX="308.0" layoutY="414.0" prefHeight="25.0" prefWidth="76.0" promptText="R3" style="-fx-background-color: white;" />
       <TextField fx:id="r4" alignment="CENTER_RIGHT" layoutX="520.0" layoutY="414.0" prefHeight="25.0" prefWidth="76.0" promptText="R4" style="-fx-background-color: white;" />
-      <ImageView fitHeight="87.0" fitWidth="94.0" layoutX="247.0" layoutY="384.0">
-         <image>
-            <Image url="@../Icones/seta-redonda.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="87.0" fitWidth="94.0" layoutX="456.0" layoutY="383.0">
+      <ImageView fx:id="s1" fitHeight="200.0" fitWidth="200.0" layoutX="194.0" layoutY="327.0" scaleX="0.5" scaleY="0.5">
          <image>
             <Image url="@../Icones/seta-redonda.png" />
          </image>
@@ -60,6 +55,11 @@
             <Font name="Candara Italic" size="25.0" />
          </font>
       </Label>
+      <ImageView fx:id="s2" fitHeight="200.0" fitWidth="200.0" layoutX="403.0" layoutY="326.0" scaleX="0.5" scaleY="0.5">
+         <image>
+            <Image url="@../Icones/seta-redonda.png" />
+         </image>
+      </ImageView>
       <Label fx:id="i2" alignment="CENTER" layoutX="483.0" layoutY="412.0" prefWidth="39.0" text="I2">
          <font>
             <Font name="Candara Italic" size="25.0" />

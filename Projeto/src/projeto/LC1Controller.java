@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 
 /**
  * FXML Controller class
@@ -39,6 +40,12 @@ public class LC1Controller implements Initializable {
     private Label i2;
     @FXML
     private Label i3;
+    @FXML
+    private ImageView s3;
+    @FXML
+    private ImageView s2;
+    @FXML
+    private ImageView s1;
 
     /**
      * Initializes the controller class.

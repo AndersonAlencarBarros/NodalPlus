@@ -32,9 +32,11 @@ public class LT3Controller implements Initializable {
     @FXML
     private TextField r4;
     @FXML
-    private Label i1;
+    private Label v1;
     @FXML
-    private Label i2;
+    private Label v2;
+    @FXML
+    private Label v3;
 
     /**
      * Initializes the controller class.

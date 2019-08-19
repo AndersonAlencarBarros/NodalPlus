@@ -51,23 +51,27 @@ public class O3Controller implements Initializable {
 
      @FXML
     private void calcular(ActionEvent event) {
-       req.setOpacity(1);
-       v.setOpacity(1);
-       I.setOpacity(1);
-       circuito.setOpacity(1);
-       seta.setOpacity(1);
-       
-        double r1 = Double.parseDouble(R1.getText());
-        double r2 = Double.parseDouble(R2.getText()); 
-        double r3 = Double.parseDouble(R3.getText()); 
-        double r4 = Double.parseDouble(R4.getText()); 
-        double v1 = Double.parseDouble(V.getText());
-        double Req1 = r2 + r3;
-        double Req2 = r1 + (r4*Req1)/(r4 + Req1);  
-        double Corrente = v1/Req2;
-        I.setText(Double.toString(Corrente));
-        v.setText(Double.toString(v1));
-        req.setText(Double.toString(Req2));   
+       try{
+        req.setOpacity(1);
+        v.setOpacity(1);
+        I.setOpacity(1);
+        circuito.setOpacity(1);
+        seta.setOpacity(1);
+
+         double r1 = Double.parseDouble(R1.getText());
+         double r2 = Double.parseDouble(R2.getText()); 
+         double r3 = Double.parseDouble(R3.getText()); 
+         double r4 = Double.parseDouble(R4.getText()); 
+         double v1 = Double.parseDouble(V.getText());
+         double Req1 = r2 + r3;
+         double Req2 = r1 + (r4*Req1)/(r4 + Req1);  
+         double Corrente = v1/Req2;
+         I.setText(Double.toString(Corrente));
+         v.setText(Double.toString(v1));
+         req.setText(Double.toString(Req2));   
+        }catch(Exception e){
+            System.out.println("Erro na Hora de Calcular");
+        }
     }
     
 }

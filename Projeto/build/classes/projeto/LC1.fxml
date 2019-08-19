@@ -46,17 +46,17 @@
       <TextField fx:id="r3" layoutX="576.0" layoutY="359.0" prefHeight="25.0" prefWidth="118.0" promptText="R3" style="-fx-background-color: white;" />
       <TextField fx:id="r4" alignment="CENTER" layoutX="298.0" layoutY="452.0" prefHeight="25.0" prefWidth="76.0" promptText="R4" style="-fx-background-color: white;" />
       <TextField fx:id="r5" alignment="CENTER" layoutX="454.0" layoutY="452.0" prefHeight="25.0" prefWidth="76.0" promptText="R5" style="-fx-background-color: white;" />
-      <ImageView fitHeight="87.0" fitWidth="94.0" layoutX="290.0" layoutY="315.0">
+      <ImageView fx:id="s3" fitHeight="200.0" fitWidth="200.0" layoutX="312.0" layoutY="404.0" scaleX="0.4" scaleY="0.4">
          <image>
             <Image url="@../Icones/seta-redonda.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="87.0" fitWidth="94.0" layoutX="450.0" layoutY="317.0">
+      <ImageView fx:id="s2" fitHeight="200.0" fitWidth="200.0" layoutX="392.0" layoutY="260.0" scaleX="0.4" scaleY="0.4">
          <image>
             <Image url="@../Icones/seta-redonda.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="87.0" fitWidth="94.0" layoutX="368.0" layoutY="460.0">
+      <ImageView fx:id="s1" fitHeight="200.0" fitWidth="200.0" layoutX="233.0" layoutY="260.0" scaleX="0.4" scaleY="0.4">
          <image>
             <Image url="@../Icones/seta-redonda.png" />
          </image>

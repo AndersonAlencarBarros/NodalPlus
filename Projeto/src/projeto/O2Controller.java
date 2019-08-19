@@ -46,21 +46,24 @@ public class O2Controller implements Initializable {
 
     @FXML
     private void calcular(ActionEvent event) {
-       req.setOpacity(1);
-       v.setOpacity(1);
-       I.setOpacity(1);
-       circuitoO1.setOpacity(1);
-       seta.setOpacity(1);
-       
-        double r1 = Double.parseDouble(R1.getText());
-        double r2 = Double.parseDouble(R2.getText()); 
-        double v1 = Double.parseDouble(V.getText());
-        double Req = (r1*r2)/(r1 + r2);  
-        double Corrente = v1/Req;
-        I.setText(Double.toString(Corrente));
-        v.setText(Double.toString(v1));
-        req.setText(Double.toString(Req));
-        
+       try{ 
+        req.setOpacity(1);
+        v.setOpacity(1);
+        I.setOpacity(1);
+        circuitoO1.setOpacity(1);
+        seta.setOpacity(1);
+
+         double r1 = Double.parseDouble(R1.getText());
+         double r2 = Double.parseDouble(R2.getText()); 
+         double v1 = Double.parseDouble(V.getText());
+         double Req = (r1*r2)/(r1 + r2);  
+         double Corrente = v1/Req;
+         I.setText(Double.toString(Corrente));
+         v.setText(Double.toString(v1));
+         req.setText(Double.toString(Req));
+       }catch(Exception e){
+            System.out.println("Erro na Hora de Calcular");
+       } 
     }
     
 }

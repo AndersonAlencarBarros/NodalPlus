@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
 /**
@@ -34,6 +35,10 @@ public class LC2Controller implements Initializable {
     private Label i1;
     @FXML
     private Label i2;
+    @FXML
+    private ImageView s1;
+    @FXML
+    private ImageView s2;
 
     /**
      * Initializes the controller class.

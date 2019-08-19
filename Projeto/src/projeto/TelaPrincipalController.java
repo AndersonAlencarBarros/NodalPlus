@@ -31,4 +31,11 @@ public class TelaPrincipalController implements Initializable {
          Projeto.loadScene("TelaCorrente.fxml", "Calcular");  
     }
     
+    @FXML
+    public void ir_Sobre(){ 
+         Projeto.loadScene("Sobre.fxml", "Calcular");  
+    }
+    
+    
+    
 }

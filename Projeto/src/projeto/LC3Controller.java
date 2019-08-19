@@ -10,6 +10,9 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 
 /**
  * FXML Controller class
@@ -17,6 +20,26 @@ import javafx.fxml.Initializable;
  * @author ksr
  */
 public class LC3Controller implements Initializable {
+    @FXML
+    private Label label;
+    @FXML
+    private TextField r1;
+    @FXML
+    private TextField r2;
+    @FXML
+    private TextField vfem;
+    @FXML
+    private TextField r3;
+    @FXML
+    private TextField r4;
+    @FXML
+    private ImageView s1;
+    @FXML
+    private Label i1;
+    @FXML
+    private ImageView s2;
+    @FXML
+    private Label i2;
 
     /**
      * Initializes the controller class.
