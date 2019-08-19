@@ -37,10 +37,13 @@ public class CorrenteMalhas {
                 matrizResistencias[i][j] = 0;
             }
         }
+        int quantidadeResistores;
         for (i = 0; i < qtdMalhas; i++) {
             in.nextLine();
+            System.out.println("A malha "+i+1+"tem quantos resistores? ");
+            quantidadeResistores = in.nextInt();
             System.out.print("-------------------------- Malha " + (i + 1) + " -------------------------------\n");
-            for (j = 0; j < 4; j++) {
+            for (j = 0; j < quantidadeResistores; j++) {
                 System.out.print("Digite a resistencia " + (j + 1) + " da malha " + (i + 1) + ": ");
                 float aux = Math.abs(in.nextFloat());
                 if (aux == 0.0) {
@@ -174,7 +177,7 @@ public class CorrenteMalhas {
         Imprime(X1, k + 1, 1);
     }
 
-    void principal() {
+    void principal(int qtdMalhas, float[][] matrizMalhas, int[][] matrizVerificacao) {
         // TODO code application logic here
         int i, j, k = 0;
         recebeMatriz();

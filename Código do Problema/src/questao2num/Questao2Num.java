@@ -59,8 +59,50 @@ public class Questao2Num {
         matrizNodal[2][6] = 3;
         matrizNodal[2][7] = 170;
        
+       //------------------------------------
+        int qtdMalhas = 2,ind,ind2;
+        float matrizMalha[][] = new float[qtdMalhas][4];
+        int matrizVerificacao[][] = new int [qtdMalhas][6];
+        for (ind = 0; ind < qtdMalhas; ind++){
+            for (ind2 = 0; ind2 < 4; ind2++){
+                matrizMalha[ind][ind2] = 0;
+            }
+        }        
+        for (ind = 0; ind < qtdMalhas; ind++){
+            for (ind2 = 0; ind2 < 6; ind2++){
+                matrizVerificacao[ind][ind2] = 0;
+            }
+        }        
+        matrizMalha[0][0] = (int) 2;
+        matrizMalha[0][1] = 53;
+        matrizVerificacao[0][0] = 2;
+        matrizMalha[0][2] = 1;
+        matrizVerificacao[0][1] = 1;
+        matrizVerificacao[0][2] = 2;
         
+        matrizMalha[1][0] = (int) 3;
+        matrizMalha[1][1] = 1;
+        matrizVerificacao[1][0] = 2;
+        matrizMalha[1][2] = 1;
+        matrizVerificacao[1][1] = 1;
+        matrizVerificacao[1][2] = 1;
+        matrizMalha[1][3] = 1;
+        matrizVerificacao[1][3] = 2; 
         
+        for (ind = 0; ind < qtdMalhas; ind++){
+            System.out.print("| ");
+            for (ind2 = 0; ind2 < 4; ind2++){
+                System.out.print(matrizMalha[ind][ind2]);
+            }
+            System.out.print(" |");
+        }        
+        for (ind = 0; ind < qtdMalhas; ind++){
+            System.out.print("| ");
+            for (ind2 = 0; ind2 < 6; ind2++){
+                System.out.print(matrizVerificacao[ind][ind2]+" ");
+            }
+            System.out.println(" |");
+        }  
         
         System.out.println("============== MENU ================\n\n");
         System.out.println("1 - Achar a tensão nos nós;");
@@ -83,7 +125,7 @@ public class Questao2Num {
                 break;
             case(2):
                 CorrenteMalhas c = new CorrenteMalhas();
-                c.principal();
+                //c.principal(qtdMalhas,matrizMalha,matrizVerificacao);
                 break;
         }
         
