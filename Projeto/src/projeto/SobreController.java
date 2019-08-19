@@ -17,7 +17,7 @@ public class SobreController implements Initializable {
     
     @FXML
     public void ir_TelaPrincipal(){ 
-         Projeto.loadScene("TelaPrincipal.fxml", "Calcular");  
+         Projeto.loadScene("TelaPrincipal.fxml", "Nodal+");  
     }
     
 }

@@ -41,7 +41,7 @@ public class O2Controller implements Initializable {
 
     @FXML
     private void ir_TelaOHM(ActionEvent event) {
-         Projeto.loadScene("OHM.fxml", "Calcular"); 
+         Projeto.loadScene("OHM.fxml", "Lei de Ohm"); 
     }
 
     @FXML

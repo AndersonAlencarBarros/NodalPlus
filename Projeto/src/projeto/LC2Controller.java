@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package projeto;
 
 import java.net.URL;
@@ -14,12 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-
-/**
- * FXML Controller class
- *
- * @author ksr
- */
+ 
 public class LC2Controller implements Initializable {
     @FXML
     private Label label;
@@ -39,22 +30,26 @@ public class LC2Controller implements Initializable {
     private ImageView s1;
     @FXML
     private ImageView s2;
-
-    /**
-     * Initializes the controller class.
-     */
+ 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+       s1.setOpacity(0);
+       s2.setOpacity(0); 
+       i1.setOpacity(0); 
+       i2.setOpacity(0); 
     }    
 
     @FXML
     private void calcular(ActionEvent event) {
+       s1.setOpacity(1);
+       s2.setOpacity(1); 
+       i1.setOpacity(1); 
+       i2.setOpacity(1); 
     }
     
     @FXML
     public void ir_TelaCorrente(){ 
-         Projeto.loadScene("TelaCorrente.fxml", "Calcular");  
+         Projeto.loadScene("TelaCorrente.fxml", "Lei das Correntes");  
     }
     
 }

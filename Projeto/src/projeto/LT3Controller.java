@@ -39,11 +39,7 @@ public class LT3Controller implements Initializable {
     private Label v2;
     @FXML
     private Label v3;
-
-    /**
-     * Initializes the controller class.
-     * @param url
-     */
+ 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -91,6 +87,6 @@ public class LT3Controller implements Initializable {
    
      @FXML
     public void ir_TelaTensao(){ 
-         Projeto.loadScene("TelaTensao.fxml", "Calcular");  
+         Projeto.loadScene("TelaTensao.fxml", "Lei das Tensões");  
     }
 }

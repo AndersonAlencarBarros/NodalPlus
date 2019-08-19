@@ -17,7 +17,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <Text layoutX="81.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Desenvolvido por, Anderson de Alencar, Edon Bredon, Kemuel Rocha e Vinícius Macedo, visamos auxiliar o aprendizado das técnicas de análise de circuitos cuja necessidade de propor soluções que auxiliem na correção e ratificação dos conhecimentos práticos nos levaram a criar este programa que beneficie na melhor compreensão dos discentes." wrappingWidth="632.541015625">
+      <Text layoutX="81.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Desenvolvido por, Anderson de Alencar, Edon Brendon, Kemuel Rocha e Vinícius Macedo, visamos auxiliar o aprendizado das técnicas de análise de circuitos cuja necessidade de propor soluções que auxiliem na correção e ratificação dos conhecimentos práticos nos levaram a criar este programa que beneficie na melhor compreensão dos discentes." wrappingWidth="632.541015625">
          <font>
             <Font size="20.0" />
          </font>
