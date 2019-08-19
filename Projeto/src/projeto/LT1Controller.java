@@ -73,8 +73,8 @@ public class LT1Controller implements Initializable {
         float vetorResultado[] = new float[3]; 
         int aux;
         
-        vetorResultado = (t.principal(qtdNo, terra, noFonte , Integer.parseInt(vfem.getText()), matrizNodal));
-        DecimalFormat df = new DecimalFormat("#.00"); 
+        vetorResultado = (t.principal(qtdNo, terra, noFonte , Float.parseFloat(vfem.getText()), matrizNodal));
+        DecimalFormat df = new DecimalFormat("#.000"); 
         
         v3.setText(df.format(vetorResultado[1])+" V");
         v1.setText(df.format(vetorResultado[2])+" V");

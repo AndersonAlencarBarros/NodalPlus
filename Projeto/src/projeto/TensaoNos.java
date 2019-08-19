@@ -128,7 +128,7 @@ public class TensaoNos {
         }
     }
 
-    float[] principal(int qtdNo, int terra, int noFonte, int tensao, float[][] matrizNodal) {
+    float[] principal(int qtdNo, int terra, int noFonte, float tensao, float[][] matrizNodal) {
         int auxiliar,auxiliar2;
         for (auxiliar = 1;  auxiliar < qtdNo-1; auxiliar++){
             System.out.print("| "); 
