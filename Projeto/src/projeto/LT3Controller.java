@@ -6,6 +6,8 @@
 package projeto;
 
 import java.net.URL;
+import java.text.DecimalFormat;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -32,9 +34,11 @@ public class LT3Controller implements Initializable {
     @FXML
     private TextField r4;
     @FXML
-    private Label i1;
+    private Label v1;
     @FXML
-    private Label i2;
+    private Label v2;
+    @FXML
+    private Label v3;
 
     /**
      * Initializes the controller class.
@@ -48,6 +52,41 @@ public class LT3Controller implements Initializable {
 
     @FXML
     private void calcular(ActionEvent event) {
+        int qtdNo = 4, terra = 3, noFonte = 0;
+        int i,j;
+        float[][] matrizNodal = new float[(qtdNo-1)][(2*qtdNo+2)];
+        for (i = 1;  i < qtdNo-1; i++){
+            for (j = 1; j < (2*qtdNo)+2 ; j++){
+                System.out.println(j+"ddd");
+                matrizNodal[i][j] = 0;
+            }
+        }
+        
+        matrizNodal[1][1] = 3;
+        matrizNodal[1][2] = 0;
+        matrizNodal[1][3] = Float.parseFloat(r1.getText());
+        matrizNodal[1][4] = 2;
+        matrizNodal[1][5] = Float.parseFloat(r2.getText());
+        matrizNodal[1][6] = 3;
+        matrizNodal[1][7] = Float.parseFloat(r3.getText());;
+        
+        matrizNodal[2][1] = 2;
+        matrizNodal[2][2] = 1;
+        matrizNodal[2][3] = Float.parseFloat(r2.getText());;
+        matrizNodal[2][4] = 3;
+        matrizNodal[2][5] = Float.parseFloat(r4.getText());;
+                
+        TensaoNos t = new TensaoNos();
+        float vetorResultado[] = new float[3]; 
+        int aux;
+        
+        vetorResultado = (t.principal(qtdNo, terra, noFonte , Float.parseFloat(vfem.getText()), matrizNodal));        
+        DecimalFormat df = new DecimalFormat("#.000"); 
+        
+        v3.setText(df.format(vetorResultado[1])+" V");
+        v1.setText(df.format(vetorResultado[1])+" V");
+        v3.setText(Float.toString(vetorResultado[0])+" V");;
+        v2.setText(df.format(vetorResultado[2])+" V");
     }
    
      @FXML
