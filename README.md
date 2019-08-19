@@ -3,7 +3,7 @@
 ### Desenvolvido por  ###
 
 * Anderson de Alencar
-* Edon Bredon
+* Edon Brendon
 * Vinícius Macedo
 * Kemuel Rocha
 
