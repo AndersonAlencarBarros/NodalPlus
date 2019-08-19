@@ -71,7 +71,7 @@ public class LT2Controller implements Initializable {
     
     @FXML
     public void ir_TelaTensao(){ 
-         Projeto.loadScene("TelaTensao.fxml", "Calcular");  
+         Projeto.loadScene("TelaTensao.fxml", "Lei das Tensões");  
     }
     
 }

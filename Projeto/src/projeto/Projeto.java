@@ -7,6 +7,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
  
 public class Projeto extends Application {
@@ -22,7 +23,8 @@ public class Projeto extends Application {
     public void start(Stage primaryStage) throws Exception {
         this.primaryStage = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("TelaPrincipal.fxml"));
-    
+        primaryStage.getIcons().add(new Image("/Icones/icon.png"));
+        primaryStage.setTitle("Nodal+");
         Scene scene = new Scene(root);
         
         primaryStage.setScene(scene);

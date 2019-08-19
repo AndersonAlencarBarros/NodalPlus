@@ -10,6 +10,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
  
 public class TelaPrincipalController implements Initializable {
+    @FXML
+    private Label label;
         
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -18,7 +20,7 @@ public class TelaPrincipalController implements Initializable {
     
     @FXML
     public void ir_TelaTensao(){ 
-         Projeto.loadScene("TelaTensao.fxml", "Calcular");  
+         Projeto.loadScene("TelaTensao.fxml", "Lei das Tensões");  
     }
     
     @FXML
@@ -28,12 +30,12 @@ public class TelaPrincipalController implements Initializable {
      
     @FXML
     public void ir_TelaCorrente(){ 
-         Projeto.loadScene("TelaCorrente.fxml", "Calcular");  
+         Projeto.loadScene("TelaCorrente.fxml", "Lei das Correntes");  
     }
     
     @FXML
     public void ir_Sobre(){ 
-         Projeto.loadScene("Sobre.fxml", "Calcular");  
+         Projeto.loadScene("Sobre.fxml", "Sobre");  
     }
     
     
