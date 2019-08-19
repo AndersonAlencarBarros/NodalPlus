@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="802.0" prefWidth="795.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.LC2Controller">
+   <children>
+      <ImageView fitHeight="279.0" fitWidth="588.0" layoutX="115.0" layoutY="286.0">
+         <image>
+            <Image url="@../Icones/LT2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="271.0" layoutY="71.0" text="Lei das Correntes">
+         <font>
+            <Font name="Candara Light" size="40.0" />
+         </font>
+      </Label>
+      <Button layoutX="20.0" layoutY="72.0" mnemonicParsing="false" onAction="#ir_TelaCorrente" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../Icones/arrow-left-circle(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="265.0" layoutY="224.0" text="Divirta-se inserindo valores">
+         <font>
+            <Font name="Candara Light" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="r1" layoutX="333.0" layoutY="413.0" prefHeight="25.0" prefWidth="76.0" promptText="R1" style="-fx-background-color: white;" />
+      <ImageView fitHeight="87.0" fitWidth="94.0" layoutX="213.0" layoutY="371.0">
+         <image>
+            <Image url="@../Icones/seta-redonda.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="r2" alignment="CENTER" layoutX="398.0" layoutY="304.0" prefHeight="25.0" prefWidth="76.0" promptText="R2" style="-fx-background-color: white;" />
+      <Button layoutX="343.0" layoutY="597.0" mnemonicParsing="false" onAction="#calcular" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: white; -fx-border-color: black;" text="Calcular" />
+      <TextField fx:id="vfem" layoutX="117.0" layoutY="411.0" prefHeight="25.0" prefWidth="51.0" promptText="Vfem" style="-fx-background-color: white;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="r3" layoutX="553.0" layoutY="416.0" prefHeight="25.0" prefWidth="76.0" promptText="R3" style="-fx-background-color: white;" />
+      <ImageView fitHeight="87.0" fitWidth="94.0" layoutX="393.0" layoutY="376.0">
+         <image>
+            <Image url="@../Icones/seta-redonda.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="i1" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="399.0" prefWidth="39.0" text="I1">
+         <font>
+            <Font name="Candara Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="i2" alignment="CENTER" layoutX="420.0" layoutY="405.0" prefWidth="39.0" text="I2">
+         <font>
+            <Font name="Candara Italic" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -29,9 +29,9 @@
             <Font name="Candara Light" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="394.0" layoutY="514.0" mnemonicParsing="false" onAction="#ir_LT3" prefHeight="130.0" prefWidth="275.0" style="-fx-background-color: white;">
+      <Button layoutX="378.0" layoutY="511.0" mnemonicParsing="false" onAction="#ir_LT3" prefHeight="130.0" prefWidth="275.0" style="-fx-background-color: white;">
          <graphic>
-            <ImageView fitHeight="178.0" fitWidth="338.0">
+            <ImageView fitHeight="232.0" fitWidth="423.0">
                <image>
                   <Image url="@../Icones/O3.png" />
                </image>
@@ -40,16 +40,16 @@
       </Button>
       <Button layoutX="394.0" layoutY="318.0" mnemonicParsing="false" onAction="#ir_LT2" style="-fx-background-color: white;">
          <graphic>
-            <ImageView fitHeight="178.0" fitWidth="338.0">
+            <ImageView fitHeight="205.0" fitWidth="391.0">
                <image>
-                  <Image url="@../Icones/O2.png" />
+                  <Image url="@../Icones/LT2.png" />
                </image>
             </ImageView>
          </graphic>
       </Button>
       <Button layoutX="54.0" layoutY="342.0" mnemonicParsing="false" onAction="#ir_LT1" style="-fx-background-color: white;">
          <graphic>
-            <ImageView fitHeight="281.0" fitWidth="312.0">
+            <ImageView fitHeight="294.0" fitWidth="314.0">
                <image>
                   <Image url="@../Icones/circuit-20190815-1228.png" />
                </image>

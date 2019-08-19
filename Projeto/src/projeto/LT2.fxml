@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.LT2Controller">
-    
+<AnchorPane id="AnchorPane" prefHeight="802.0" prefWidth="795.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.LT2Controller">
+   <children>
+      <ImageView fitHeight="279.0" fitWidth="588.0" layoutX="115.0" layoutY="286.0">
+         <image>
+            <Image url="@../Icones/LT2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="271.0" layoutY="71.0" text="Lei das Tensões">
+         <font>
+            <Font name="Candara Light" size="40.0" />
+         </font>
+      </Label>
+      <Button layoutX="20.0" layoutY="72.0" mnemonicParsing="false" onAction="#ir_TelaTensao" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView onMouseClicked="#ir_TelaTensao">
+               <image>
+                  <Image url="@../Icones/arrow-left-circle(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="265.0" layoutY="224.0" text="Divirta-se inserindo valores">
+         <font>
+            <Font name="Candara Light" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="r1" alignment="CENTER_RIGHT" layoutX="238.0" layoutY="416.0" prefHeight="25.0" prefWidth="76.0" promptText="R1" style="-fx-background-color: white;" />
+      <TextField fx:id="r2" alignment="CENTER" layoutX="398.0" layoutY="304.0" prefHeight="25.0" prefWidth="76.0" promptText="R2" style="-fx-background-color: white;" />
+      <Button layoutX="343.0" layoutY="597.0" mnemonicParsing="false" onAction="#calcular" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: white; -fx-border-color: black;" text="Calcular" />
+      <TextField fx:id="vfem" layoutX="117.0" layoutY="411.0" prefHeight="25.0" prefWidth="51.0" promptText="Vfem" style="-fx-background-color: white;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label fx:id="v1" layoutX="319.0" layoutY="317.0" text="V1" />
+      <Label fx:id="v2" layoutX="539.0" layoutY="316.0" text="V2" />
+      <Label fx:id="v3" layoutX="317.0" layoutY="520.0" text="V3" />
+      <TextField fx:id="r3" layoutX="553.0" layoutY="416.0" prefHeight="25.0" prefWidth="76.0" promptText="R3" style="-fx-background-color: white;" />
+   </children>
 </AnchorPane>

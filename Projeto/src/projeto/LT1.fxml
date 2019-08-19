@@ -10,13 +10,18 @@
 
 <AnchorPane id="AnchorPane" prefHeight="802.0" prefWidth="795.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.LT1Controller">
    <children>
+      <ImageView fitHeight="386.0" fitWidth="471.0" layoutX="173.0" layoutY="239.0">
+         <image>
+            <Image url="@../Icones/circuit-20190815-1228.png" />
+         </image>
+      </ImageView>
       <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
       <Label layoutX="271.0" layoutY="71.0" text="Lei das Tensões">
          <font>
             <Font name="Candara Light" size="40.0" />
          </font>
       </Label>
-      <Button layoutX="20.0" layoutY="72.0" mnemonicParsing="false" onAction="#ir_TelaOHM" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: white;">
+      <Button layoutX="20.0" layoutY="72.0" mnemonicParsing="false" onAction="#ir_TelaTensao" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: white;">
          <graphic>
             <ImageView>
                <image>
@@ -30,14 +35,20 @@
             <Font name="Candara Light" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="R1_O1" alignment="CENTER" layoutX="65.0" layoutY="331.0" prefHeight="25.0" prefWidth="193.0" promptText="R1" style="-fx-background-color: white;" />
-      <TextField fx:id="R2_O1" layoutX="246.0" layoutY="459.0" prefHeight="25.0" prefWidth="76.0" promptText="R2" style="-fx-background-color: white;" />
-      <Button layoutX="342.0" layoutY="661.0" mnemonicParsing="false" onAction="#calcular" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: white; -fx-border-color: black;" text="Calcular" />
-      <TextField fx:id="V_O1" layoutX="12.0" layoutY="457.0" prefHeight="25.0" prefWidth="51.0" promptText="Vfem" style="-fx-background-color: white;">
+      <TextField fx:id="r1" alignment="CENTER_RIGHT" layoutX="136.0" layoutY="355.0" prefHeight="25.0" prefWidth="104.0" promptText="R1" style="-fx-background-color: white;" />
+      <TextField fx:id="r2" alignment="CENTER_RIGHT" layoutX="330.0" layoutY="359.0" prefHeight="25.0" prefWidth="76.0" promptText="R2" style="-fx-background-color: white;" />
+      <Button layoutX="343.0" layoutY="598.0" mnemonicParsing="false" onAction="#calcular" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: white; -fx-border-color: black;" text="Calcular" />
+      <TextField fx:id="vfem" layoutX="383.0" layoutY="520.0" prefHeight="25.0" prefWidth="51.0" promptText="Vfem" style="-fx-background-color: white;">
          <font>
             <Font size="13.0" />
          </font>
       </TextField>
-      <TextField fx:id="R3_O1" alignment="CENTER" layoutX="60.0" layoutY="589.0" prefHeight="25.0" prefWidth="193.0" promptText="R3" style="-fx-background-color: white;" />
+      <TextField fx:id="r3" layoutX="576.0" layoutY="359.0" prefHeight="25.0" prefWidth="118.0" promptText="R3" style="-fx-background-color: white;" />
+      <TextField fx:id="r4" alignment="CENTER" layoutX="298.0" layoutY="452.0" prefHeight="25.0" prefWidth="76.0" promptText="R4" style="-fx-background-color: white;" />
+      <TextField fx:id="r5" alignment="CENTER" layoutX="454.0" layoutY="452.0" prefHeight="25.0" prefWidth="76.0" promptText="R5" style="-fx-background-color: white;" />
+      <Label fx:id="v1" layoutX="412.0" layoutY="272.0" text="V1" />
+      <Label fx:id="v2" layoutX="579.0" layoutY="433.0" text="V2" />
+      <Label fx:id="v3" layoutX="410.0" layoutY="454.0" text="V3" />
+      <Label fx:id="v4" layoutX="225.0" layoutY="433.0" text="V4" />
    </children>
 </AnchorPane>
