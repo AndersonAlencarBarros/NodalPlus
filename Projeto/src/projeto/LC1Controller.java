@@ -2,6 +2,8 @@
 package projeto;
 
 import java.net.URL;
+import java.text.DecimalFormat;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -56,6 +58,66 @@ public class LC1Controller implements Initializable {
        i1.setOpacity(1);
        i2.setOpacity(1);
        i3.setOpacity(1);
+       
+        CorrenteMalhas c = new CorrenteMalhas();
+        int qtdMalhas = 3,ind,ind2;
+        int[][] matrizAuxiliar = new int[qtdMalhas][6];
+        float vetorTensoes[] = new float[qtdMalhas];
+        float matrizMalha[][] = new float[qtdMalhas][4];
+        int matrizVerificacao[][] = new int [qtdMalhas][6];
+        for (ind = 0; ind < qtdMalhas; ind++){
+            vetorTensoes[ind] = 0;
+            for (ind2 = 0; ind2 < 4; ind2++){
+                matrizMalha[ind][ind2] = 0;
+            }
+        }        
+        for (ind = 0; ind < qtdMalhas; ind++){
+            for (ind2 = 0; ind2 < 6; ind2++){
+                matrizVerificacao[ind][ind2] = 0;
+                matrizAuxiliar[ind][ind2] = 0;
+            }
+        }
+        
+        matrizMalha[0][0] = Float.parseFloat(r1.getText());
+        matrizVerificacao[0][0] = 2;
+        matrizAuxiliar[0][0] = 0;
+        matrizMalha[0][1] = Float.parseFloat(r2.getText());
+        matrizVerificacao[0][1] = 1;
+        matrizAuxiliar[0][1] = 2;        
+        matrizMalha[0][2] = Float.parseFloat(r4.getText());
+        matrizVerificacao[0][2] = 1;
+        matrizAuxiliar[0][2] = 3;
+        vetorTensoes[0] = 0; 
+        
+        
+        matrizMalha[1][0] = Float.parseFloat(r3.getText());
+        matrizVerificacao[1][0] = 2;
+        matrizAuxiliar[1][0] = 0;
+        matrizMalha[1][1] = Float.parseFloat(r2.getText());
+        matrizVerificacao[1][1] = 1;
+        matrizAuxiliar[1][1] = 1;
+        matrizMalha[1][2] = Float.parseFloat(r5.getText());
+        matrizVerificacao[1][2] = 1;
+        matrizAuxiliar[1][2] = 3;
+        vetorTensoes[1] = 0;
+        
+        
+        matrizMalha[2][0] = Float.parseFloat(r4.getText());
+        matrizVerificacao[2][0] = 1;
+        matrizAuxiliar[2][0] = 1;
+        matrizMalha[2][1] = Float.parseFloat(r5.getText());
+        matrizVerificacao[2][1] = 1;
+        matrizAuxiliar[2][1] = 2;
+        vetorTensoes[2] = Float.parseFloat(vfem.getText());
+        
+        float vetorResultado[] = new float[3];
+        vetorResultado = c.principal(qtdMalhas,matrizMalha,matrizVerificacao,vetorTensoes,matrizAuxiliar);
+        System.out.println(Arrays.toString(vetorResultado));       
+        DecimalFormat df = new DecimalFormat("#.00"); 
+        
+        i1.setText(df.format(vetorResultado[0]));
+        i2.setText(df.format(vetorResultado[1]));
+        i3.setText(df.format(vetorResultado[2]));
     }
     
     

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package questao2num;
+package projeto;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class CorrenteMalhas {
     float matrizResistencias[][];
     float diferencaMax;
 
-    void recebeMatriz(int qtdMalhas, float[][] matrizMalhas, int[][] matrizVerificacao, float[] vetorTensoes) {
+    void recebeMatriz(int qtdMalhas, float[][] matrizMalhas, int[][] matrizVerificacao, float[] vetorTensoes, int[][] matrizAuxiliar) {
         int i, j;
 
         Scanner in = new Scanner(System.in);
@@ -55,22 +55,22 @@ public class CorrenteMalhas {
                     do {
                         System.out.print("A resistência " + (j + 1) + " faz conexão com outra malha: 1 - Sim | 2 - Nao ");
                         //op = in.nextInt();
-                        if (flag == 0)
+                        
                             op = matrizVerificacao[i][j];
-                        else
-                            op = matrizVerificacao[i][j+1];
+                            System.out.println("OPZAO: "+ op);
+                        
                     } while (op != 1 && op != 2);
                     if (op == 1) {
                         do {
                             System.out.print("Com qual malha a resistencia " + (j + 1) + " faz conexão: ");
                             //op = in.nextInt();
-                            op = matrizVerificacao[i][j+1];
-                            flag = 1;
+                            op = matrizAuxiliar[i][j];
+                            System.out.println("i: "+i);
+                            System.out.println("op: "+op);
                         } while ((op == i + 1) || (op <= 0 || op > qtdMalhas));
+                        System.out.println("aux: "+aux);
                         matrizResistencias[i][op - 1] = aux * (-1);
-                    }else{
-                        flag = 0;
-                    }    
+                    }
                 }
             }
 
@@ -188,10 +188,10 @@ public class CorrenteMalhas {
         Imprime(X1, k + 1, 1,qtdMalhas);
     }
 
-    float[] principal(int qtdMalhas, float[][] matrizMalhas, int[][] matrizVerificacao, float[] vetorTensoes) {
+    float[] principal(int qtdMalhas, float[][] matrizMalhas, int[][] matrizVerificacao, float[] vetorTensoes, int[][] matrizAuxiliar) {
         // TODO code application logic here
         int i, j, k = 0;
-        recebeMatriz(qtdMalhas,matrizMalhas,matrizVerificacao,vetorTensoes);
+        recebeMatriz(qtdMalhas,matrizMalhas,matrizVerificacao,vetorTensoes,matrizAuxiliar);
         X0 = new float[qtdMalhas];
         X1 = new float[qtdMalhas];
         for (i = 0; i < qtdMalhas; i++) {
