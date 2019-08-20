@@ -10,6 +10,11 @@
 
 <AnchorPane id="AnchorPane" prefHeight="802.0" prefWidth="795.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.O2Controller">
    <children>
+      <ImageView fitHeight="802.0" fitWidth="795.0" layoutX="1.0">
+         <image>
+            <Image url="@../Icones/Plano%20de%20Fundo.jpg" />
+         </image>
+      </ImageView>
       <ImageView fitHeight="229.0" fitWidth="413.0" layoutX="26.0" layoutY="342.0">
          <image>
             <Image url="@../Icones/O2.png" />
@@ -18,7 +23,7 @@
       <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
       <Label layoutX="303.0" layoutY="76.0" text="Lei de Ohm">
          <font>
-            <Font name="Candara Light" size="40.0" />
+            <Font name="System Bold" size="40.0" />
          </font>
       </Label>
       <Button layoutX="20.0" layoutY="72.0" mnemonicParsing="false" onAction="#ir_TelaOHM" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: white;">
@@ -30,9 +35,9 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="265.0" layoutY="224.0" text="Divirta-se inserindo valores">
+      <Label layoutX="251.0" layoutY="224.0" text="Divirta-se inserindo valores">
          <font>
-            <Font name="Candara Light" size="24.0" />
+            <Font name="System Italic" size="27.0" />
          </font>
       </Label>
       <TextField fx:id="R1" alignment="CENTER" layoutX="109.0" layoutY="358.0" prefHeight="25.0" prefWidth="127.0" promptText="R1" style="-fx-background-color: white;" />

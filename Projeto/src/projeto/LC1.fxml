@@ -10,15 +10,20 @@
 
 <AnchorPane id="AnchorPane" prefHeight="802.0" prefWidth="795.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.LC1Controller">
    <children>
-      <ImageView fitHeight="386.0" fitWidth="471.0" layoutX="173.0" layoutY="239.0">
+      <ImageView fitHeight="802.0" fitWidth="795.0" layoutY="-1.0">
+         <image>
+            <Image url="@../Icones/Plano%20de%20Fundo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="364.0" fitWidth="444.0" layoutX="191.0" layoutY="261.0">
          <image>
             <Image url="@../Icones/circuit-20190815-1228.png" />
          </image>
       </ImageView>
       <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <Label layoutX="271.0" layoutY="71.0" text="Lei das Correntes">
+      <Label layoutX="263.0" layoutY="71.0" text="Lei das Correntes">
          <font>
-            <Font name="Candara Light" size="40.0" />
+            <Font name="System Bold" size="40.0" />
          </font>
       </Label>
       <Button layoutX="20.0" layoutY="72.0" mnemonicParsing="false" onAction="#ir_TelaCorrente" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: white;">
@@ -32,48 +37,48 @@
       </Button>
       <Label layoutX="265.0" layoutY="224.0" text="Divirta-se inserindo valores">
          <font>
-            <Font name="Candara Light" size="24.0" />
+            <Font name="System Italic" size="27.0" />
          </font>
       </Label>
-      <TextField fx:id="r1" alignment="CENTER_RIGHT" layoutX="136.0" layoutY="355.0" prefHeight="25.0" prefWidth="104.0" promptText="R1" style="-fx-background-color: white;" />
-      <TextField fx:id="r2" alignment="CENTER_RIGHT" layoutX="330.0" layoutY="359.0" prefHeight="25.0" prefWidth="76.0" promptText="R2" style="-fx-background-color: white;" />
+      <TextField fx:id="r1" alignment="CENTER_RIGHT" layoutX="194.0" layoutY="370.0" prefHeight="25.0" prefWidth="61.0" promptText="R1" style="-fx-background-color: white;" />
+      <TextField fx:id="r2" alignment="CENTER_RIGHT" layoutX="337.0" layoutY="374.0" prefHeight="25.0" prefWidth="76.0" promptText="R2" style="-fx-background-color: white;" />
       <Button layoutX="343.0" layoutY="625.0" mnemonicParsing="false" onAction="#calcular" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: white; -fx-border-color: black;" text="Calcular" />
       <TextField fx:id="vfem" layoutX="383.0" layoutY="586.0" prefHeight="25.0" prefWidth="51.0" promptText="Vfem" style="-fx-background-color: white;">
          <font>
             <Font size="13.0" />
          </font>
       </TextField>
-      <TextField fx:id="r3" layoutX="576.0" layoutY="359.0" prefHeight="25.0" prefWidth="118.0" promptText="R3" style="-fx-background-color: white;" />
-      <TextField fx:id="r4" alignment="CENTER" layoutX="298.0" layoutY="452.0" prefHeight="25.0" prefWidth="76.0" promptText="R4" style="-fx-background-color: white;" />
-      <TextField fx:id="r5" alignment="CENTER" layoutX="454.0" layoutY="452.0" prefHeight="25.0" prefWidth="76.0" promptText="R5" style="-fx-background-color: white;" />
+      <TextField fx:id="r3" layoutX="571.0" layoutY="371.0" prefHeight="25.0" prefWidth="69.0" promptText="R3" style="-fx-background-color: white;" />
+      <TextField fx:id="r4" alignment="CENTER" layoutX="302.0" layoutY="460.0" prefHeight="25.0" prefWidth="76.0" promptText="R4" style="-fx-background-color: white;" />
+      <TextField fx:id="r5" alignment="CENTER" layoutX="454.0" layoutY="460.0" prefHeight="25.0" prefWidth="76.0" promptText="R5" style="-fx-background-color: white;" />
       <ImageView fx:id="s3" fitHeight="200.0" fitWidth="200.0" layoutX="312.0" layoutY="404.0" scaleX="0.4" scaleY="0.4">
          <image>
             <Image url="@../Icones/seta-redonda.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="s2" fitHeight="200.0" fitWidth="200.0" layoutX="392.0" layoutY="260.0" scaleX="0.4" scaleY="0.4">
+      <ImageView fx:id="s2" fitHeight="200.0" fitWidth="200.0" layoutX="395.0" layoutY="271.0" scaleX="0.4" scaleY="0.4">
          <image>
             <Image url="@../Icones/seta-redonda.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="s1" fitHeight="200.0" fitWidth="200.0" layoutX="233.0" layoutY="260.0" scaleX="0.4" scaleY="0.4">
+      <ImageView fx:id="s1" fitHeight="200.0" fitWidth="200.0" layoutX="244.0" layoutY="272.0" scaleX="0.4" scaleY="0.4">
          <image>
             <Image url="@../Icones/seta-redonda.png" />
          </image>
       </ImageView>
-      <Label fx:id="i1" alignment="CENTER" contentDisplay="CENTER" layoutX="313.0" layoutY="343.0" prefWidth="39.0" text="I1">
+      <Label fx:id="i1" alignment="CENTER" contentDisplay="CENTER" layoutX="278.0" layoutY="408.0" prefHeight="30.0" prefWidth="134.0" text="I1">
          <font>
-            <Font name="Candara Italic" size="25.0" />
+            <Font name="Candara Italic" size="17.0" />
          </font>
       </Label>
-      <Label fx:id="i2" alignment="CENTER" layoutX="473.0" layoutY="345.0" prefWidth="39.0" text="I2">
+      <Label fx:id="i2" alignment="CENTER" layoutX="428.0" layoutY="408.0" prefHeight="30.0" prefWidth="127.0" text="I2">
          <font>
-            <Font name="Candara Italic" size="25.0" />
+            <Font name="Candara Italic" size="17.0" />
          </font>
       </Label>
-      <Label fx:id="i3" alignment="CENTER" contentDisplay="CENTER" layoutX="392.0" layoutY="489.0" prefWidth="39.0" text="I3">
+      <Label fx:id="i3" alignment="CENTER" contentDisplay="CENTER" layoutX="391.0" layoutY="507.0" prefHeight="30.0" prefWidth="134.0" text="I3">
          <font>
-            <Font name="Candara Italic" size="25.0" />
+            <Font name="Candara Italic" size="17.0" />
          </font>
       </Label>
    </children>

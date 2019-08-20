@@ -10,15 +10,20 @@
 
 <AnchorPane id="AnchorPane" prefHeight="802.0" prefWidth="795.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.LC3Controller">
    <children>
+      <ImageView fitHeight="802.0" fitWidth="795.0" layoutX="1.0">
+         <image>
+            <Image url="@../Icones/Plano%20de%20Fundo.jpg" />
+         </image>
+      </ImageView>
       <ImageView fitHeight="298.0" fitWidth="599.0" layoutX="99.0" layoutY="277.0">
          <image>
             <Image url="@../Icones/O3.png" />
          </image>
       </ImageView>
       <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <Label layoutX="271.0" layoutY="71.0" text="Lei das Correntes">
+      <Label layoutX="254.0" layoutY="71.0" text="Lei das Correntes">
          <font>
-            <Font name="Candara Light" size="40.0" />
+            <Font name="System Bold" size="40.0" />
          </font>
       </Label>
       <Button layoutX="20.0" layoutY="72.0" mnemonicParsing="false" onAction="#ir_TelaCorrente" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: white;">
@@ -30,9 +35,9 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="265.0" layoutY="224.0" text="Divirta-se inserindo valores">
+      <Label layoutX="256.0" layoutY="224.0" text="Divirta-se inserindo valores">
          <font>
-            <Font name="Candara Light" size="24.0" />
+            <Font name="System Italic" size="27.0" />
          </font>
       </Label>
       <TextField fx:id="r1" alignment="CENTER" layoutX="256.0" layoutY="304.0" prefHeight="25.0" prefWidth="76.0" promptText="R1" style="-fx-background-color: white;" />
@@ -50,9 +55,9 @@
             <Image url="@../Icones/seta-redonda.png" />
          </image>
       </ImageView>
-      <Label fx:id="i1" alignment="CENTER" contentDisplay="CENTER" layoutX="271.0" layoutY="412.0" prefWidth="39.0" text="I1">
+      <Label fx:id="i1" alignment="CENTER" contentDisplay="CENTER" layoutX="206.0" layoutY="476.0" prefHeight="21.0" prefWidth="173.0" text="I1">
          <font>
-            <Font name="Candara Italic" size="25.0" />
+            <Font name="Candara Italic" size="17.0" />
          </font>
       </Label>
       <ImageView fx:id="s2" fitHeight="200.0" fitWidth="200.0" layoutX="403.0" layoutY="326.0" scaleX="0.5" scaleY="0.5">
@@ -60,9 +65,9 @@
             <Image url="@../Icones/seta-redonda.png" />
          </image>
       </ImageView>
-      <Label fx:id="i2" alignment="CENTER" layoutX="483.0" layoutY="412.0" prefWidth="39.0" text="I2">
+      <Label fx:id="i2" alignment="CENTER" layoutX="413.0" layoutY="473.0" prefHeight="30.0" prefWidth="184.0" text="I2">
          <font>
-            <Font name="Candara Italic" size="25.0" />
+            <Font name="Candara Italic" size="17.0" />
          </font>
       </Label>
    </children>
