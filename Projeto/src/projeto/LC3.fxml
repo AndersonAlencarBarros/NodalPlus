@@ -21,7 +21,7 @@
          </image>
       </ImageView>
       <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <Label layoutX="254.0" layoutY="71.0" text="Lei das Correntes">
+      <Label layoutX="254.0" layoutY="71.0" text="Lei das Tensões">
          <font>
             <Font name="System Bold" size="40.0" />
          </font>

@@ -97,7 +97,7 @@ public class LC3Controller implements Initializable {
     }
     @FXML
     public void ir_TelaCorrente(){ 
-         Projeto.loadScene("TelaCorrente.fxml", "Lei das Correntes");  
+         Projeto.loadScene("TelaCorrente.fxml", "Lei das Tensões");  
     }
     
 }

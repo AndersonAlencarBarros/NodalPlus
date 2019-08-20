@@ -15,7 +15,7 @@
             <Image url="@../Icones/asdadadsadsad.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="301.0" layoutY="477.0" mnemonicParsing="false" onAction="#ir_TelaCorrente" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: black;" text="Lei das Correntes" textFill="WHITE">
+      <Button layoutX="301.0" layoutY="477.0" mnemonicParsing="false" onAction="#ir_TelaCorrente" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: black;" text="Lei das Tensões" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -25,7 +25,7 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <Button layoutX="301.0" layoutY="397.0" mnemonicParsing="false" onAction="#ir_TelaTensao" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: black;" text="Lei das Tensões" textFill="WHITE">
+      <Button layoutX="301.0" layoutY="397.0" mnemonicParsing="false" onAction="#ir_TelaTensao" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: black;" text="Lei das Correntes" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>

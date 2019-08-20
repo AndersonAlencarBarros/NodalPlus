@@ -87,6 +87,6 @@ public class LT3Controller implements Initializable {
    
      @FXML
     public void ir_TelaTensao(){ 
-         Projeto.loadScene("TelaTensao.fxml", "Lei das Tensões");  
+         Projeto.loadScene("TelaTensao.fxml", "Lei das Correntes");  
     }
 }

@@ -20,7 +20,7 @@ public class TelaPrincipalController implements Initializable {
     
     @FXML
     public void ir_TelaTensao(){ 
-         Projeto.loadScene("TelaTensao.fxml", "Lei das Tensões");  
+         Projeto.loadScene("TelaTensao.fxml", "Lei das Correntes");  
     }
     
     @FXML
@@ -30,7 +30,7 @@ public class TelaPrincipalController implements Initializable {
      
     @FXML
     public void ir_TelaCorrente(){ 
-         Projeto.loadScene("TelaCorrente.fxml", "Lei das Correntes");  
+         Projeto.loadScene("TelaCorrente.fxml", "Lei das Tensões");  
     }
     
     @FXML
